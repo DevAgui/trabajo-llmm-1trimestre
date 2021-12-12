@@ -1,0 +1,426 @@
+/********** call to the fonts **********/
+@font-face {
+    font-family: Title;
+    src: url("../fonts/alhambra.otf");
+}
+@font-face {
+    font-family: Paragraphs;
+    src: url("../fonts/goudy.mediaeval-regular.ttf");
+}
+
+
+/********** general style **********/
+html {
+    scroll-behavior: smooth;
+}
+*{
+    width: auto;
+    height: auto;
+}
+body{
+    margin: 0%;
+    padding: 0%;
+}
+h1, h2, h3, h4, h5, h6{
+    padding-top: 6px;
+    font-family: Title;
+    color: #ce6d18;
+    text-align: center;
+    font-size: 2em;
+}
+a{
+    color: #ce6d18;
+    text-decoration: none;
+}
+b{
+    color: #afb518;
+}
+p{
+    padding: 0% 4%;
+    text-align: justify;
+    font-family: Paragraphs;
+    font-size: 1.8em;
+}
+
+
+/********** nav style and hamburguer menu **********/
+.topnav {
+    background-color: #333;
+    overflow: hidden;
+}
+nav{
+        font-size: 1.6em;
+        font-family: Paragraphs;
+        background-color: rgb(0, 0, 0);
+        z-index: 1;
+        position: sticky;
+        top: 0px;
+        padding: 1%;
+}
+nav a{
+        padding: 1%;
+}
+nav a:active{
+        background-color: #ce6d18;
+        color: black;
+}
+nav a:hover{
+        background-color: #ce6d18;
+        color: black;
+}
+
+
+/********** buttons **********/
+#cta{
+    position: absolute;
+    bottom: 5%;
+    left: 44%;
+}
+.button{
+    font-size: 1.7em;
+    text-align: center;
+    font-family: Title;
+    color: #ce6d18;
+    background-color: black;
+    border-radius: 10%;
+    text-transform: uppercase;
+    padding: 2%;
+}
+.button:hover{
+    background-color: rgba(0, 0, 0, 0.555);
+    cursor: pointer;
+}
+#malaga-button{
+    margin-top: 3%;
+    position: absolute;
+    top: 100%;
+    left: 40%;
+}
+#alhambra-button{
+    margin-top: 3%;
+    position: absolute;
+    top: 25%;
+    left: 40%;
+}
+#almeria-button{
+    margin-top: 3%;
+    position: absolute;
+    top: 25%;
+    left: 40%;
+}
+#history-button{
+    position: absolute;
+    top: 100%;
+    left: 30%;
+}
+
+
+/********** hero section, sections and general things **********/
+#hero{
+    height: 95vh;
+    margin: auto;
+    background-image: url('../images/generalife.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    text-align: center;
+    background-position: 88%;
+    background-position-y: top;
+}
+#history{
+    width: 90%;
+    margin: auto;
+}
+.malaga-bar{
+    margin-top: 100px;
+}
+.bar{
+    border-radius: 30%;
+    background-color: #afb518;
+    margin: 15% 5% 15% 5%;
+    padding: 0% 0% 1%;
+}
+
+
+/*******  distribution & text styles ********/
+.half{
+    width: 50%;
+    float: left;
+    box-sizing: border-box;
+}
+#title{
+    font-size: 2.5em;
+    margin-top: 0%;
+    padding-top:30px;
+    text-align: center;
+}
+.right{
+    padding-top: 2%;
+} 
+.relative{
+    position: relative;
+}
+.clearfloat{
+    clear: both;
+}
+.left{
+padding: 4%;
+}
+.section-title{
+    padding-bottom: 2%;
+}
+.text{
+    padding-top: 3%;
+    padding-left:1%;
+    margin-bottom: 3%;
+    padding-bottom: 3%;
+}
+.spaced{
+    padding-bottom: 5%;
+}
+.text-right{
+    text-align: right;
+}
+
+
+/*******  images & videos  ********/
+#mycastle{
+    width: 2%;
+}
+#introduction-image{
+    width: 100%;
+    display: block;
+    margin: auto;
+}
+#castle-of-malaga{
+    width: 100%;
+    margin: auto;
+    padding-bottom: 2%;
+    height: 100vh;
+}
+#alhambra-img{
+    width: 100%;
+    margin: auto;
+    height: 100vh;
+    padding-bottom:2%;
+}
+#almeria-img{
+    width: 100%;
+    margin: auto;
+    height: 100vh;
+    padding-bottom:2%;
+}
+.video-container{
+    padding-top: 18%;
+}
+.iframe{
+    border: 3px solid black;
+    padding: 2%;
+    margin: auto;
+    display: block;
+    width: 70%;
+    height: 80vh;
+}
+.iframe:hover{
+    border: 3px solid #ce6d18;
+}
+.fa-twitter{
+    padding-left: 30px;
+    text-align: center;
+    color: #ce6d18;
+    font-size: 3em!important;
+}
+.fa-github{
+    padding-left: 30px;
+    text-align: center;
+    color: #ce6d18;
+    font-size: 3em!important;
+}
+
+
+/*******  gallery style  ********/
+#gallery{
+    margin-top: 10%;
+    margin-left: 1%;
+    margin-right: 1%;
+}
+.fifth{
+    border: 1px solid black;
+    width: 20%;
+    float: left;
+    box-sizing: border-box;
+    padding: 2%;
+}
+.fifth:hover{
+    border-color: #ce6d18;
+    background-color: rgba(0, 0, 0, 0.808);
+}
+.fifth img{
+    width: 100%;
+    height: 25vh;
+}
+
+
+/*******  footer  ********/
+footer{
+    box-sizing: border-box;
+    margin-top:10%;
+    padding: 9% 0%;
+    background-color: black;
+}
+footer p{
+    margin: 0%;
+    padding-bottom: 1%;
+    color: #ce6d18;
+}
+
+
+/*******  media queries  ********/
+@media only screen and (max-width:1500px){
+
+
+/*******  text  ********/
+    #title{
+        font-size: 2.5em;
+        padding-left: 5%;
+    }
+    h1,h2,h3,h4,h5,h6{
+        margin:10% 0%;
+        font-size: 2.3em;
+    }
+    p{
+        font-size: 2em;
+    }
+    
+
+/*******  disposition & images  ********/
+    .bar{
+        margin:20% 4%;
+    }
+    .half{
+        width: 100%;
+    }
+    .fifth{
+        width: 50%;
+    }
+    .iframe{
+        height: 50vh;
+    }
+    #mycastle{
+        width: 3%;
+    }
+    .left{
+        padding: 0%;
+    }
+    #history{
+        width: 100%;
+        margin: 0%;
+    }
+
+
+/*******  buttons  ********/
+    .button{
+        padding: 3%;
+    }
+    #cta{
+        left: 45%;
+    }
+    #malaga-button{
+        left: 42%;
+    }
+    #almeria-button{
+        top: 30%;
+        left: 42%;
+    }
+    #alhambra-button{
+        top: 30%;
+        left: 42%;
+    }
+    #guadalete{
+        width: 100%;
+        padding-bottom: 4%;
+    }
+    #history-button{
+        margin:5% 0%;
+        left: 40%;
+    }
+    
+    
+/*******  footer  ********/
+
+    footer{
+        padding:15% 5%;
+    }
+    footer .half{
+        width: 50%;
+    }
+}
+@media only screen and (max-width:853px){
+
+/*******  text  ********/
+    #title{
+        font-size: 2.2em;
+        padding-left: 5%;
+    }
+    h1,h2,h3,h4,h5,h6{
+        font-size: 2em;
+    }
+
+
+/*******  buttons  ********/
+    #cta{
+        left: 40%;
+    }
+    #history-button{
+        left: 37%;
+    }
+    #malaga-button{
+        left: 35%;
+    }
+    #almeria-button{
+        top: 44%;
+        left: 35%;
+    }
+    #alhambra-button{
+        top:43%;
+        left: 34%;
+    }
+
+    
+/*******  gallery  ********/
+    #gallery img{
+        height: 60vh;
+    }
+    .fifth{
+        width: 100%;
+    }
+
+
+/*******  footer  ********/
+    footer{
+        padding: 25% 5%;
+    }
+}
+@media only screen and (max-width:700px){
+
+
+/*******  buttons  ********/
+    #cta{
+        left: 38%;
+    }
+    #history-button{
+        top: 95%;
+        left: 30%;
+    }
+    #malaga-button{
+        left: 31%;
+    }
+    #almeria-button{
+        top: 45%;
+        left: 31%;
+    }
+    #alhambra-button{
+        top: 46%;
+        left: 31%;
+    }
+}
